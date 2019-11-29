@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Primer JSP</title>
 </head>
 <body>
+<h1>Primer JSP</h1>	
+ La hora del sistema es: <%=new java.util.Date()  %>
 
 </body>
 </html>
