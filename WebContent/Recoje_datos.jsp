@@ -21,7 +21,9 @@
 	
 	Class.forName("com.mysql.jdbc.Driver");
 	
-	try{Connection miConexion = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_jsp","root",""); 
+	try{
+		
+	Connection miConexion = java.sql.DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_jsp","root",""); 
 	
 	Statement miStatement = miConexion.createStatement();
 	
