@@ -35,7 +35,7 @@
 	
 	}catch(Exception e){
 		
-		out.printl("Error al registrar: "+e);
+		out.println("Error al registrar: "+e);
 	}
  
 %>
