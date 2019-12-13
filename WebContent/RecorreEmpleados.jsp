@@ -58,24 +58,15 @@ font-weigth:bold;}
 
 <table border="1">
 
-<tr class="cabecera"><td>Nombre</td><td>Apellido</td><td>Puesto</td><td>Salario</td></tr>
+<tr class="cabecera"><td>Nombre</td><td>Apellido</td><td>Puesto</td><td>Salario</td><td>Bonus</td></tr>
 <c:forEach var="EmpTemp" items="${losEmpleados}">
 <tr>
 	<td>${ EmpTemp.nombre}</td><td> ${ EmpTemp.apellido}</td><td> ${EmpTemp.puesto }</td><td> ${ EmpTemp.salario} <br/> 
+	<td><c:if test="${ EmpTemp.salario>1000}">200</c:if></td>
 </tr>	
 </c:forEach>
 
 </table>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
